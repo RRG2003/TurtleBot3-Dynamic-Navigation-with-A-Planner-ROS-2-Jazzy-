@@ -1,0 +1,13 @@
+# ROS2 build files
+/build/
+/install/
+/log/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary files
+*.swp
+*.zip
+

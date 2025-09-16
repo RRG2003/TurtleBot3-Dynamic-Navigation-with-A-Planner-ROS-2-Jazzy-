@@ -1,0 +1,7 @@
+<library path="libastar_planner.so">
+  <class type="tb3_astar_planner::AStarPlanner"
+         base_class_type="nav2_core::GlobalPlanner">
+    <description>A* based global planner for TurtleBot3</description>
+  </class>
+</library>
+

@@ -1,0 +1,57 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Views
+    Name: Views
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Name: Grid
+      Class: rviz_default_plugins/Grid
+      Enabled: true
+
+    - Name: TF
+      Class: rviz_default_plugins/TF
+      Enabled: true
+
+    - Name: RobotModel
+      Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Robot Description: robot_description
+
+    - Name: LaserScan
+      Class: rviz_default_plugins/LaserScan
+      Enabled: true
+      Topic: /scan
+
+    - Name: Global Costmap
+      Class: rviz_default_plugins/Map
+      Enabled: true
+      Topic: /global_costmap/costmap
+
+    - Name: Local Costmap
+      Class: rviz_default_plugins/Map
+      Enabled: true
+      Topic: /local_costmap/costmap
+
+    - Name: Path
+      Class: rviz_default_plugins/Path
+      Enabled: true
+      Topic: /plan
+
+    - Name: Robot Footprint
+      Class: rviz_default_plugins/Polygon
+      Enabled: true
+      Topic: /local_costmap/published_footprint
+
+Views:
+  Current:
+    Class: rviz_default_plugins/Orbit
+    Focal Point: [0.0, 0.0, 0.0]
+    Distance: 6.0
+    Pitch: 0.785
+    Yaw: 0.785
+
