@@ -29,12 +29,25 @@ Features
 
 Setup Instructions
 
-1. Install ROS2 & TurtleBot3 Packages  
-Make sure you have ROS2 Humble (or compatible) installed and TurtleBot3 simulation packages:
-
-```bash
+# 1. Install ROS2 Jazzy
+#    Follow official ROS2 Jazzy install guides for Ubuntu 24.04
 sudo apt update
-sudo apt install ros-humble-turtlebot3* ros-humble-nav2-bringup
+sudo apt install ros-jazzy-desktop  # or similar metapackage
+
+# 2. Install other required ROS2 / Gazebo / Nav2 components
+sudo apt install ros-jazzy-navigation2 ros-jazzy-slam-toolbox
+# Also, Gazebo / ros-gz packages
+sudo apt install ros-jazzy-gazebo* ros-jazzy-ros-gz*
+
+# 3. Setup your workspace
+mkdir -p ~/tb3_ws/src
+cd ~/tb3_ws/src
+
+# 4. Clone required repos from source
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git         # check branch or tags
+git clone https://github.com/ROBOTIS-GIT/turtlebot3.git              # contains URDF/Xacro, etc.
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git  # worlds, Gazebo models
+
 ````
 
 2. Clone the Repository
