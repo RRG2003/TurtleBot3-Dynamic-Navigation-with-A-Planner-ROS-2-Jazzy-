@@ -41,7 +41,7 @@ sudo apt install ros-humble-turtlebot3* ros-humble-nav2-bringup
 
 ```bash
 cd ~
-git clone https://github.com/<your-username>/tb3_ws.git
+git clone https://github.com/RRG2003/TurtleBot3-Dynamic-Navigation-with-A-Planner-ROS-2-Jazzy.git
 cd tb3_ws
 ```
 
@@ -59,7 +59,7 @@ How to Run
 Step 1: Launch TurtleBot3 in Gazebo
 
 ```bash
-ros2 launch tb3_launch tb3_gz_nav.launch.py
+ros2 launch tb3_dynamic_nav_jazzy tb3_gz_nav.launch.py
 ```
 
 Step 2: Launch Navigation Stack with A\* Planner
